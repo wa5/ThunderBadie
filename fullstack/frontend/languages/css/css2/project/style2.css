@@ -1,0 +1,16 @@
+#main-nav li:hover .submenu>li{
+    display: block;
+    top: 0px;
+}
+
+.submenu li{
+    display: none;
+    position: absolute;
+    top: 0;
+
+}
+
+.submenu{
+    display: flex;
+    flex-direction: column;
+}
