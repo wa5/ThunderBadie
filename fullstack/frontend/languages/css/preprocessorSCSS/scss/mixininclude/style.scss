@@ -1,0 +1,69 @@
+
+@import "variables";
+@import "fonts";
+
+
+
+
+
+//this is with doiffrent properties
+@mixin dynamicdesign($arg1,$arg2){
+
+    background-color: $arg1;
+    font-size: $arg2;
+}
+
+.root5{
+    @include dynamicdesign($fs,34px);
+
+}
+.root6{
+    @include dynamicdesign(rgb(40, 212, 68),50px)
+}
+.root7{
+    @include dynamicdesign(rgb(119, 0, 255),44px)
+}
+.root8{
+    @include dynamicdesign(rgb(200, 255, 0),30px)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//this is with same properties
+@mixin design{
+
+    background-color: $bgcolor1;
+    font-size: 50px;
+}
+.root1{
+    @include design
+}
+.root2{
+    @include design
+}
+.root3{
+    @include design
+}
+.root4{
+    @include design
+}

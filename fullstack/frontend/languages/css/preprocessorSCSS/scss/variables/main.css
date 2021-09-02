@@ -1,0 +1,31 @@
+.k {
+  background-color: #ff8800;
+  font-size: 90px;
+}
+
+.k2 {
+  background-color: #ff8800;
+  font-size: 90px;
+}
+
+.k3 {
+  background-color: #ff8800;
+  font-size: 90px;
+}
+
+.container {
+  background-color: #00ff62;
+}
+
+.container .oo {
+  background-color: red;
+}
+
+.container #op:hover {
+  font-size: 60px;
+}
+
+.container #op:hover .f {
+  font-size: 60px;
+}
+/*# sourceMappingURL=main.css.map */
