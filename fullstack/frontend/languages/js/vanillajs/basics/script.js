@@ -1,0 +1,3 @@
+function call(){
+    alert("hello")
+}
