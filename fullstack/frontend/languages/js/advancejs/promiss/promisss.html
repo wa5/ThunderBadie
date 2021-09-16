@@ -1,0 +1,28 @@
+<script>
+
+function party(){
+
+    return new Promise((reso,reject)=>{
+
+        setTimeout(()=>{
+            const err=true
+            if(!err){
+                console.log("tq tamil")
+                resolve()
+            }else{
+                console.log("vy bad mr tamil y u did not full fill ur promiss")
+                reject()
+            }
+        },3000)
+    })
+}
+party().then(()=>{
+    console.log("magic ")
+}).catch(()=>{
+    console.log("vry bad err")
+})
+var g=new Promise()
+console.log(new Promise())
+</script>
+
+

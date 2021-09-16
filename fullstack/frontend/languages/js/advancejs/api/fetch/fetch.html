@@ -1,0 +1,14 @@
+<script>
+
+function fun(){
+    const data= fetch('https://api.github.com/users').then((resp)=>{
+        return resp.text()
+    }).then((resp2)=>{
+console.log(resp2)
+    })
+    return data
+}
+
+console.log(fun())
+
+</script>
