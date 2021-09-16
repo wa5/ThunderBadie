@@ -1,0 +1,68 @@
+<script>
+
+
+const radius=[3,1,2,4]
+
+const Area=function(radius){
+   
+    const output=[]
+
+    for(i=0;i<radius.length;i++){
+        output.push(Math.PI*radius[i]*radius[i])
+        console.log(output)
+    }
+}
+Area(radius)
+
+
+const circumfrance=function(radius){ 
+   const output=[]
+   for(i=0;i<radius.length;i++){
+       output.push(2*Math.PI*radius[i])
+       console.log("circum france",output)
+   }
+}
+circumfrance(radius)
+
+const Diameter=function(radius){ 
+   const output=[]
+   for(i=0;i<radius.length;i++){
+       output.push(2*radius[i])
+       console.log("diameter",output)
+   }
+}
+Diameter(radius)
+</script>
+
+
+
+<script>
+
+
+const radius1=[3,1,2,4]
+
+
+const area1=function(radius1){
+    return Math.PI*radius1*radius1;
+}
+const circum1=function(radius1){
+    return 2*Math.PI*radius1;
+}  
+const diameter1=function(radius1){
+    return 2*radius1;
+}
+
+const calculate=function(radius1,logic){ 
+   const output=[]
+   for(i=0;i<radius1.length;i++){
+       output.push(logic(radius1[i]))
+       
+   }
+   return output
+}
+
+console.log("area",calculate(radius1,area1))
+console.log("circumfrance",calculate(radius1,circum1))
+console.log("diameter",calculate(radius1,diameter1))
+
+</script>

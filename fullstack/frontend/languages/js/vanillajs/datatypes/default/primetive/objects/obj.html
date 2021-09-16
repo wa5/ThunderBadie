@@ -1,0 +1,32 @@
+<script>
+
+var chair={
+    lefg:4,
+    color:"green",
+    waite:"3kg",
+    forsale:false
+}
+
+
+var tamil={
+    handsume:true,
+    legs:2,
+    eyes:2,
+    moods:{morning:"sleepy",afternoon:{one:"hungry",two:"sleepy",three:"hungary2"}},
+    hobby:function(){console.log("playing games ",this.legs)}
+}
+
+//obect destructuring
+var {lefg,color,waite,forsale}=chair
+
+
+
+console.log(color)
+console.log(tamil.moods.afternoon.two)
+tamil.hobby()
+
+
+chair.color="blue"
+console.log(chair)
+
+</script>
