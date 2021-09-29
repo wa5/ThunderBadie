@@ -1,0 +1,1 @@
+(()=>{"use strict";document.write("helo"),console.log("my faverite dish is salad")})();
