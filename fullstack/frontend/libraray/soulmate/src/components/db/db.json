@@ -1,0 +1,26 @@
+{
+  
+  "students": [
+    {
+      "id": 1,
+      "name": "pranusha",
+      "chocolate": "kitkate"
+    },
+    {
+      "id": 2,
+      "name": "gokul",
+      "chocolate": "milkybar"
+    },
+    {
+      "id": 3,
+      "name": "rahul",
+      "chocolate": "5star"
+    },
+    {
+      "id": 4,
+      "name": "akhil",
+      "chocolate": "dirymilk"
+    }
+  ]
+  
+}
