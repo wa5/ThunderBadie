@@ -1,0 +1,17 @@
+<script>
+
+function child(data){
+console.log(data)
+var value="im data as a callback"
+parent(value)
+}
+
+
+
+function parent(haha){
+    console.log(haha)
+var data=10
+child(data)
+}
+parent("jjjj")
+</script>

@@ -1,26 +1,34 @@
 {
-  
   "students": [
     {
-      "id": 1,
-      "name": "pranusha",
-      "chocolate": "kitkate"
-    },
-    {
       "id": 2,
-      "name": "gokul",
-      "chocolate": "milkybar"
+      "name": "salman",
+      "chocolate": "diar"
     },
     {
       "id": 3,
       "name": "rahul",
-      "chocolate": "5star"
+      "chocolate": "25stares"
     },
     {
-      "id": 4,
-      "name": "akhil",
-      "chocolate": "dirymilk"
+      "id": "4",
+      "name": "gokul",
+      "chocolate": "ghhggh"
+    },
+    {
+      "id": "5",
+      "name": "gokul",
+      "chocolate": "ghhggh"
+    },
+    {
+      "id": "6",
+      "name": "gokul",
+      "chocolate": "ghhggh"
+    },
+    {
+      "id": "7",
+      "name": "gokulgg",
+      "chocolate": "ghhggh"
     }
   ]
-  
 }

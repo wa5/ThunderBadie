@@ -1,9 +1,10 @@
 import React from 'react'
 import {Navbar,Nav,NavDropdown,Container} from 'react-bootstrap'
 import { Link } from 'react-router-dom'
-
+import {useDispatch,useSelector} from 'react-redux'
 
 function Navbarss() {
+  const myval=useSelector((state)=>state.changeNamber)
     return (
         <>
         <Navbar bg="warning" expand="lg">
@@ -12,6 +13,7 @@ function Navbarss() {
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="me-auto">
+        <Nav.Link ><Link   to="/">{myval}</Link>    </Nav.Link>
         <Nav.Link ><Link   to="/">Home</Link>    </Nav.Link>
         <Nav.Link ><Link   to="/about">About</Link>     </Nav.Link>
         <NavDropdown title="Dropdown" id="basic-nav-dropdown">
