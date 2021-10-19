@@ -26,7 +26,7 @@ app
     res.send("im home page")
 })
 
-router.route("/home1")
+app.route("/home1")
 .get((req,res)=>{
     res.send("im home page")
 })
