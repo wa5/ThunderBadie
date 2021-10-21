@@ -12,27 +12,33 @@ app.get('/',(req,res)=>{
 })
 
 
+//midele ware only give req,res,next
+var checkUrl=(req,res,next)=>{
+    console.log('hahaah im midel capturing ur data so tat i can sell ')
+    console.log(req.originalUrl)
+    next()
+ 
+}
 
+app.use(checkUrl)
 
-
-app
-.get('/home',(req,res)=>{
-    res.send("im home page")
-}).post((req,res)=>{
-    res.send("im home page")
-}).put((req,res)=>{
-    res.send("im home page")
-}).delete((req,res)=>{
-    res.send("im home page")
+app.get('/test',(req,res)=>{
+    res.send('im a middle ware example')
+})
+app.get('/test1',(req,res)=>{
+    res.send('im a middle ware example')
+})
+app.get('/test2',(req,res)=>{
+    res.send('im a middle ware example')
 })
 
-app.route("/home1")
-.get((req,res)=>{
-    res.send("im home page")
+
+
+
+
+app.get('*',(req,res)=>{
+res.send('404')
 })
-
-
-
 
 
 app.listen(app.get('port'),()=>{
