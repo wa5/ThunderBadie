@@ -1,46 +1,59 @@
 require('dotenv').config()
-const express=require('express')
+const express = require('express')
 
 // const port=process.env.PORT
-var app=express()
-app.set('port',process.env.PORT || 3000)
+var app = express()
+app.set('port', process.env.PORT || 3000)
+
+//ejs coding
+const ejs=require('ejs')
+const path=require('path')
+app.set('view engine','ejs')
+app.set('views',path.join(__dirname,'src/views'))
+//console.log(path.join(__dirname,'src/views'))
+//routes
+const data=require('./src/routes')
 
 
-let router=express.Router()
-app.get('/',(req,res)=>{
+
+
+app.get('/', (req, res) => {
     res.send('hello im hers')
 })
 
 
-//midele ware only give req,res,next
-var checkUrl=(req,res,next)=>{
-    console.log('hahaah im midel capturing ur data so tat i can sell ')
-    console.log(req.originalUrl)
-    next()
- 
-}
 
-app.use(checkUrl)
 
-app.get('/test',(req,res)=>{
-    res.send('im a middle ware example')
+//all the routes or api
+
+app.use('/api',data.about)
+
+app.use('/api',data.contact)
+
+app.use('/api',data.home)
+
+app.use('/api',data.login)
+
+app.use('/api',data.register)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+app.get('*', (req, res) => {
+    res.send('404')
 })
-app.get('/test1',(req,res)=>{
-    res.send('im a middle ware example')
-})
-app.get('/test2',(req,res)=>{
-    res.send('im a middle ware example')
-})
 
 
-
-
-
-app.get('*',(req,res)=>{
-res.send('404')
-})
-
-
-app.listen(app.get('port'),()=>{
-    console.log(`server startted12  ${app.get('port')}` )
+app.listen(app.get('port'), () => {
+    console.log(`server startted12  ${app.get('port')}`)
 })
