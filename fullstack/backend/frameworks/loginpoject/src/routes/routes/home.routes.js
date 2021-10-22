@@ -1,22 +1,17 @@
 var express=require('express')
+var sendmail=require('../../helpers/emails')
+var {getHome,posttHome,deletHome,putHome}=require('../../controller/home.Ctrl')
 let router=express.Router()
 
 
 
 router.route('/home')
-    .get((req, res) => {
-        res.render('home')
-    })
-    .post((req, res) => {
-        res.send('hello')
-    })
+    .get(getHome)
 
-    .put((req, res) => {
-        res.send('hello')
-    })
+    .post(posttHome)
 
-    .delete((req, res) => {
-        res.send('hello')
-    })
+    .put(putHome)
+
+    .delete(deletHome)
 
     module.exports=router;
