@@ -5,8 +5,10 @@ let router=express.Router()
 
 
 router.route('/about')
+
 .get((req, res) => {
-    res.render('about')
+    var data='hhh'
+    res.render('about',{nana:data})
 })
 .post((req, res) => {
     res.send('hello')

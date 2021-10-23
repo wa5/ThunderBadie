@@ -9,7 +9,7 @@ var getHome=(req, res) => {
     
     serviceEmail(name,emailid)
     idata(name,emailid,password)
-
+console.log(name)
             res.render('home',{name:name})
         }
 var posttHome=(req, res) => {

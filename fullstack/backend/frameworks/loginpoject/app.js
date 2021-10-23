@@ -22,7 +22,10 @@ const data=require('./src/routes')
 
 
 app.get('/', (req, res) => {
-    res.send('hello im hers')
+    var name=req.query.name
+    console.log(name)
+    res.render('home',{name:name})
+
 })
 
 

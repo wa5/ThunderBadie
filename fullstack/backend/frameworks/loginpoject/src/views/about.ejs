@@ -11,7 +11,15 @@
     </head>
     <body>
     
-        <h1>about</h1>
+        <h1><%
+            
+            if (typeof  nana !== 'undefined')
+            {%>
+                loged
+                <%}else{%>
+                    login
+                    <%}%>
+                </h1>
         <script src="" async defer></script>
     </body>
 </html>
