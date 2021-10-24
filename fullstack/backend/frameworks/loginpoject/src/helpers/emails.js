@@ -7,7 +7,7 @@ function sendmail(name,emailid){
         service:'gmail',
         auth:{
             user:'waseemahmed116@gmail.com',
-            pass:'1ac13cs034'
+            pass:'hhh'
         }
     });
     
