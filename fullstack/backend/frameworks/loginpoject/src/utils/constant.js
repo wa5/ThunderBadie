@@ -1,0 +1,2 @@
+const apikeyGoogleMap='AIzaSyC5969R1laTi5Ux-2_QniRJ2in06oLZepg'
+module.exports=apikeyGoogleMap

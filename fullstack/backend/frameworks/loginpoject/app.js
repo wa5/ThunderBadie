@@ -18,7 +18,9 @@ app.set('views',path.join(__dirname,'src/views'))
 //routes
 const data=require('./src/routes')
 
-
+//static files
+var pub=path.join(__dirname,'src/public')
+app.use(express.static(pub))
 
 
 app.get('/', (req, res) => {

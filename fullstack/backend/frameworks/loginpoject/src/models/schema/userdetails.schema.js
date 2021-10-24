@@ -6,6 +6,7 @@ const userStructrure=new Schema({
 name:String,
 email:String,
 password:String,
+phonNumber:Number
 })
 
 
